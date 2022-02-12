@@ -1,0 +1,48 @@
+body
+.zhuye {
+    width: 100%;
+    height: 750px;
+    background-color: #eff0f1;
+}
+
+.fenye {
+    margin-right: auto;
+    margin-left: auto;
+    height: 709px;
+    width: 950px;
+    background-color: black;
+}
+
+.fenye_1 {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-right: 23px;
+    padding-left: 23px;
+    width: 904px;
+    height: 54px;
+    background-color: #eff0f1;
+}
+
+.fenye_2 {
+    width: 803px;
+    height: 526px;
+    background-color: #eff0f1;
+    float: left;
+}
+
+.fenye_3 {
+    width: 147px;
+    height: 526px;
+    background-color: #e6e6e6;
+    float: right;
+}
+
+.fenjiexian {
+    border-bottom: 3px solid #b3b3b3;
+}
+
+.ziti {
+    font-size: 26px;
+    font-weight: 700;
+    color: #f60;
+}

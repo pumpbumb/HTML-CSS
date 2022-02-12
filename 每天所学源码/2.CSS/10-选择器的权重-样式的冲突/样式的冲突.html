@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>选择器的权重-样式的冲突</title>
+    <style>
+        /*
+            💥样式的冲突
+            当我们通过不同的选择器，选中相同的元素，并且为相同的样式设置不同的值时，此时就发生了样式的冲突。
+            ✅选择器的权重:
+                内联样式
+                id选择器
+                类和伪类选择器
+                元素选择器
+                通配选择器
+                继承的样式
+
+            👻注意：比较优先级时，需要将所有的选择器的优先级进行相加计算，最后优先级越高，则越优先显示！
+                    选择器的累加不会超过其最大的数量级，比如：类选择器再高也不会超过id选择器。
+                    如果优先级计算后相同，此时则优先使用靠下的样式，也即后面的会把前面的覆盖掉。
+        */
+        .red{
+            background-color: red;
+        }
+        div{
+            background-color: yellow;
+        }
+        div#box1{
+            background-color: turquoise;
+        }
+    </style>
+</head>
+<body>
+    <div id="box1" class="red">我是一个div</div>
+</body>
+</html>

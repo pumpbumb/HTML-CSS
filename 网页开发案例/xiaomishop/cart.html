@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="utf-8"/>
+    <title>小米商城-我的购物车</title><!--页面标题-->
+    <!--使用内部样式表-->
+    <style>
+        body {
+            padding: 0px;
+            margin: 0px;
+            background: whitesmoke;
+        }
+        /*搜索栏*/
+        #mycart {
+
+            height: 100px;
+            width: 100%;
+            margin-right: auto;
+            margin-left: auto;
+            border-top: 1px solid darkgray;
+            background: white;
+        }
+
+        #mycart_content {
+            background-color: White;
+            margin-left: auto;
+            margin-right: auto;
+            height: 100px;
+            width: 1226px;
+            text-align: center;
+
+        }
+
+        #mycart_content_log {
+            height: 100px;
+            width: 70px;
+            float: left;
+
+        }
+
+        #mycart_content_word {
+            margin-top: 25px;
+            font-size: 30px;
+            margin-left: 50px;
+            height: 75px;
+            width: 160px;
+            float: left;
+        }
+
+        #mycart_content_key {
+            margin-left: 80px;
+            margin-top: 50px;
+            font-size: 14px;
+            height: 50px;
+            width: 400px;
+            float: left;
+
+        }
+
+        #bai {
+            background: whitesmoke;
+            height: 30px;
+            width: 100%;
+            border-top: 1px solid rgb(254,140,0);
+        }
+
+        #di {
+            background: white;
+
+            width: 1226px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #goods {
+            height: 70px;
+            width: 100%;
+        }
+
+        #goods_list {
+            font-size: 18px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 70px;
+            width: 1226px;
+            background-color: white;
+        }
+
+        #goods_list_check {
+            padding-top: 20px;
+            text-align: center;
+            height: 50px;
+            width: 88px;
+            background-color: white;
+            float: left;
+        }
+
+        #goods_list_kong {
+            height: 70px;
+            width: 120px;
+            margin-left: 80px;
+            text-align: center;
+            background-color: white;
+            float: left;
+        }
+
+        #goods_list_name {
+            margin-top: 20px;
+            height: 50px;
+            margin-left: 30px;
+            text-align: center;
+            width: 200px;
+            background-color: white;
+            float: left;
+        }
+
+        #goods_list_price {
+            margin-top: 20px;
+            height: 50px;
+            width: 110px;
+            margin-left: 30px;
+            text-align: center;
+            background-color: white;
+            float: left;
+        }
+
+        #goods_list_count {
+            margin-top: 20px;
+            height: 50px;
+            width: 150px;
+            margin-left: 30px;
+            text-align: center;
+            background-color: white;
+            float: left;
+        }
+
+        #goods_list_amount {
+            margin-top: 20px;
+            height: 50px;
+            width: 201px;
+            float: left;
+            margin-left: 30px;
+            text-align: center;
+            background-color: white;
+            float: left;
+        }
+
+        #goods_list_operate {
+            margin-top: 20px;
+            height: 50px;
+            width: 75px;
+            margin-left: 30px;
+            text-align: center;
+            background-color: white;
+            float: left;
+        }
+
+        #good1 {
+            height: 116.33px;
+            width: 1226px;
+            margin-left:auto;
+            margin-right: auto;
+            border-top: 1px solid darkgray;
+        }
+
+        #good1_list {
+            font-size: 18px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 116.33px;
+            width: 1129px;
+            background-color: white;
+        }
+
+        #good1_list_check {
+            padding-top: 30px;
+            text-align: center;
+            height: 85.33px;
+            width: 88px;
+            background-color: white;
+            float: left;
+        }
+
+        #good1_list_kong {
+            padding-top: 15px;
+            height: 85.33px;
+
+            background-color: white;
+            float: left;
+            width: 120px;
+            margin-left: 30px;
+            text-align: center;
+
+        }
+
+        #good1_list_name {
+            padding-top: 30px;
+            height: 85.33px;
+
+            background-color: white;
+            float: left;
+            margin-left: 30px;
+            text-align: center;
+            width: 200px;
+        }
+
+        #good1_list_price {
+            padding-top: 30px;
+            height: 85.33px;
+
+            background-color: white;
+            float: left;
+            width: 110px;
+            margin-left: 30px;
+            text-align: center;
+        }
+
+        #good1_list_count {
+            padding-top: 30px;
+            height: 85.33px;
+
+            background-color: white;
+            float: left;
+            width: 150px;
+            margin-left: 30px;
+            text-align: center;
+        }
+
+        #good1_list_amount {
+            padding-top: 30px;
+            height: 85.33px;
+            text-align: center;
+            background-color: white;
+            width: 201px;
+            float: left;
+            margin-left: 30px;
+        }
+
+        #good1_list_operate {
+            padding-top: 30px;
+            height: 85.33px;
+
+            background-color: white;
+            float: left;
+            width: 75px;
+            margin-left: 30px;
+            text-align: center;
+        }
+
+        #bai2 {
+            background: white;
+            height: 25px;
+            width: 1226px;
+            margin-left:auto;
+            margin-right: auto;
+            border-top: 1px solid darkgray;
+        }
+
+        #bottom {
+            height: 116.33px;
+            width: 1226px;
+            margin-left:auto;
+            margin-right: auto;
+            margin-top: 30px;
+        }
+
+        #bottom_check {
+            margin-left: auto;
+            margin-right: auto;
+            height: 50px;
+            width: 1226px;
+            background-color: white;
+        }
+
+        #bottom_continue {
+            font-size: 18px;
+            text-align: center;
+            padding-top: 15px;
+            height: 15px;
+            width: 80px;
+            background-color: white;
+            float: left;
+        }
+
+        #bottom_piece {
+            font-size: 18px;
+            padding-top: 15px;
+            height: 30px;
+            width: 240px;
+            background-color: white;
+            float: left;
+
+        }
+
+        #bottom_all {
+            font-size: 20px;
+            text-align: right;
+            margin-top: 15px;
+            height: 30px;
+            width: 380px;
+            background-color: white;
+            float: right;
+        }
+
+        #bottom_total {
+            font-size: 24px;
+            text-align: center;
+            height: 50px;
+            width: 200px;
+            float: right;
+            background: #FFA500;
+        }
+
+        .se {
+            color: #ff6700
+        }
+    </style>
+
+</head>
+<body>
+<!--购物车正文-->
+
+<div id="mycart">
+    <div id="mycart_content">
+        <div id="mycart_content_log">
+            <!-- 使用标签<img src="img/0002.jpg">插入图片 -->
+            <img src="img/0002.jpg" width="55" height="55" style="position: relative;top:20px;left: 12px">
+        </div>
+        <div id="mycart_content_word">我的购物车</div>
+        <div id="mycart_content_key">温馨提示：产品是否购买成功以最后下单为准哦，请尽快结算</div>
+    </div>
+</div>
+
+<div id="bai" ></div>
+<div id="di" >
+    <div id="goods" >
+        <table id="goods_list">
+            <tr>
+            <td id="goods_list_kong">&nbsp;&nbsp;</td>
+            <td id="goods_list_name">商品名称</td>
+            <td id="goods_list_price">单价</td>
+            <td id="goods_list_count">数量</td>
+            <td id="goods_list_amount">小计</td>
+            </tr>
+            <!--此处使用标签<table>插入表格，因页面布局和出于美观的需要，并未将其定义的很复杂-->
+        </table>
+    </div>
+    <!--加入购物车的商品-->
+        <div id="good1">
+            <div id="good1_list">
+                <!-- 使用标签<img src="">插入图片 -->
+                <div id="good1_list_kong"><img src="img/1-1.jpg" width="80" height="80"></div>
+                <div id="good1_list_name">小米9 SE</div>
+                <div id="good1_list_price">1999元</div>
+                <div id="good1_list_count">1</div>
+                <div id="good1_list_amount"><span class="se">1999元</span></div>
+            </div>
+        </div>
+</div>
+<div id="bottom" >
+    <div id="bottom_check">
+        <div id="bottom_continue"> <a style="width: 100%;height: 100%;text-decoration: none;color: black;cursor: pointer;" href="jump">继续购物</a></div>
+        <div id="bottom_piece"> 丨共<span class="se">1</span>件商品</div>
+        <div id="bottom_total">
+            <!-- 使用超链接<a href="pay.html" target="blank">，链接至支付页面，页外跳转 -->
+            <a href="pay.html" target="blank">
+                <!-- 使用<button type="button">按钮标签-->
+                <button type="button" height="50" value="去结算" style="width:200px;height: 50px;font-size: 24px;background:orange;cursor: pointer; "><span style="color: #5d5d5d">去结算</span></button>
+            </a></div>
+        <div id="bottom_all"><span class="se">合计：1999元&nbsp;&nbsp;</span></div>
+    </div>
+</div>
+</body>
+</html>

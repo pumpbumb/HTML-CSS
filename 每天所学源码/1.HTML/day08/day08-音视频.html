@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>音视频</title>
+</head>
+<body>
+    <!-- 
+        ★ audio标签用来向页面中引入一个外部的音频文件。 
+        ★ 默认情况下，不允许用户自己控制播放、停止。
+        ★ audio标签的属性：
+           （1）controls：是否允许用户自己播放。
+           （2）autoplay：是否自动播放。(一般不设置为自动播放！)
+           （3）loop：音乐是否循环播放。
+    -->
+    <audio src="./2.mp3" controls loop></audio>
+
+    <!-- 
+        ★ 我们使用video标签引入视频文件。
+     -->
+     <video src="./1.mp4" controls width="500" height="300"></video>
+
+</body>
+</html>

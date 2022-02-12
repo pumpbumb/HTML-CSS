@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="utf-8">
+    <title>小米登录</title><!-- 页面标题 -->
+    <!-- 使用javascript,定义函数r()，用于检查用户输入。-->
+    <script>
+       function r()
+        {
+            var username=document.getElementById("user");
+            var pass=document.getElementById("pwd");
+            if((username.value=="")||(pass.value==""))
+            {
+                alert("用户名或密码不能为空！");
+                return false;
+            }
+            return true;
+        }
+    </script>
+    <!-- 使用内部样式表 -->
+    <style>
+        body{
+            margin: 0;
+        }
+        a:hover{
+            color: #ff6700
+        }
+        .all{
+            min-width:1226px;
+            height: 816px;
+        }
+        .waikuang_top{
+            font-family: arial,"Hiragino Sans GB", "Microsoft YaHei","微軟正黑體","儷黑 Pro", sans-serif;
+            background-color: white;
+            min-width:1226px;
+            height: 98px;
+
+        }
+        .waikuang_top_k1{
+            background-color: white;
+            width:235px;
+            height: 98px;
+            margin-left:175px;
+            display: block;
+        }
+        .waikuang_top_k2{
+            background-color: white;
+            width:155px;
+            height: 40px;
+            margin-left:70px;
+        }
+        .waikuang_top_k3{
+
+            background-color: white;
+            width:70px;
+            height: 98px;
+            float: left;
+            /*padding-top: 20px;*/
+        }
+        .waikuang_middle{
+            min-width:1226px;
+            height: 588px;
+            background:rgba(242,244,255,0.75);
+        }
+        .waikuang_middle_tupian{
+            display: block;
+            font-family: arial,"Hiragino Sans GB", "Microsoft YaHei","微軟正黑體","儷黑 Pro", sans-serif;
+            background: url("img/001_2.jpg");
+            min-width:1226px;
+            height: 524px;
+            float: left;
+            margin-top:34px;
+
+        }
+        .waikuang_middle_zhdl{
+            background-color: white;
+            width:410px;
+            height: 527px;
+            margin-left:900px;
+            margin-top:0px;
+            /*padding-left: 145px;*/
+            padding-top: 27px;
+
+        }
+        .waikuang_middle_dl{
+            width:348px;
+            height: 55px;
+            margin-left:30px;
+            margin-top:30px;
+            padding-left: 18px;
+            padding-top: 0px;
+
+            background-color: #ff6700;
+            line-height: 50px;
+            display: block;
+            margin-bottom: 14px;
+            text-align: center;
+            font-size: 15px;
+            color: #fff;
+            cursor: pointer;
+        }
+        .waikuang_middle_zh{
+            width: 348px;
+            height: 48px;
+            margin-top:20px;
+            margin-left:31px;
+            color: #555454;
+
+        }
+        .oth_type_tit {
+
+            border-top: 1px solid #c2c2c2;
+            border-top-color: rgb(194, 194, 194);
+            border-top-style: solid;
+            border-top-width: 1px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        fieldset, img {
+            font-size: 15px;
+            color: #7e7d7d;
+            border: 0;
+            border-top-color: currentcolor;
+            border-top-style: none;
+            border-top-width: 0px;
+            border-right-color: currentcolor;
+            border-right-style: none;
+            border-right-width: 0px;
+            border-bottom-color: currentcolor;
+            border-bottom-style: none;
+            border-bottom-width: 0px;
+            border-left-color: currentcolor;
+            border-left-style: none;
+            border-left-width: 0px;
+            border-image-outset: 0;
+            border-image-repeat: stretch;
+            border-image-slice: 100%;
+            border-image-source: none;
+            border-image-width: 1;
+        }
+        .waikuang_middle_qq{
+            margin-top: 0px;
+            margin-right: 17px;
+            margin-bottom: 0px;
+            margin-left: 17px;
+        }
+        .waikuang_middle_qq {
+            padding-left:65px;
+            background-position-x: 0%;
+            background-position-y: 0%;
+            width: 18px;
+            height: 18px;
+            margin-right: 10px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .waikuang_under{
+            display: block;
+            font-family: arial,"Hiragino Sans GB", "Microsoft YaHei","微軟正黑體","儷黑 Pro", sans-serif;
+            width:1519.2px;
+            min-width: 1226px;
+            height: 160px;
+            background-color:white;
+            margin-top:0px;
+
+        }
+        .waikuang_under_k1{
+            width:1519.2px;
+            height: 70px;
+            background-color: white;
+            margin-top:0px;
+        }
+        .waikuang_under_k2{
+            min-width: 1226px;
+            height: 30px;
+            background-color: white;
+            color: #7e7d7d;
+            font-size: 15px;
+            text-align: center;
+        }
+        .waikuang_under_sj2{
+            padding-left:450px;
+        }
+        .line2{
+            width: 1px;
+            height: 14px;
+            margin: 0 10px 0 6px;
+            border: 1px solid #757575;
+        }
+    </style>
+</head>
+<body>
+<div class="all">
+    <div class="waikuang_top">
+        <div class="waikuang_top_k1">
+            <div class="waikuang_top_k3">
+                <!-- 使用标签<img src="">插入图片 -->
+                <img src="https://account.xiaomi.com/static/res/28f08d0/account-static/respassport/acc-2014/img/milogo.png" style="padding-top:20px;padding-left: 10px; float: left" width="55" height="55">
+            </div>
+            <div style="width: 165px;height: 76px;background: white;float: right;padding-top:22px;">
+                <div  style="font-size: 29px ;margin-left:5px;" >
+                    小米商城
+                </div>
+                <div  style="font-size: 9px;margin-left:5px;">
+                    让每个人都能享受科技的乐趣
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--登录部分-->
+    <div class="waikuang_middle">
+        <div class="waikuang_middle_tupian">
+            <div class="waikuang_middle_k1">
+                <div class="waikuang_middle_zhdl"style="font-size: 25px">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="a" style="cursor:pointer;color:#ff6700;">账号登陆</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a class="a" style="cursor:pointer;">扫码登录</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <!--此处调用上面用javascipt定义的函数r（），用于检查用户输出-->
+                    <form action="login" method="post" onsubmit="return r()">
+                        <input type="text" name="name" id="user"
+                               class="waikuang_middle_zh"style="font-size: 13px; "placeholder="邮箱/手机号码/小米ID" ><br>
+                        <input type="password" name="password" id="pwd"
+                               class="waikuang_middle_zh" placeholder="请输入密码">
+                        <input class="waikuang_middle_dl" type="submit" value="登录">
+                        <!--此处使用<form>标签设置表单，用来实现账号密码的输入和提交-->
+                    </form>
+                    <div class="waikuang_middle_zc">
+                        <!--使用<a>标签插入超链接-->
+                        <a style="color: #ff6700; font-size:14px ;cursor:pointer;" >
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;手机短信登录/注册
+                        </a>
+                        <a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </a>
+                        <a href="" style="color: #757575;font-size:14px;cursor:pointer; ">
+                            立即注册
+                        </a>
+
+                        <a style=" font-size:13px ">
+                            <span class="line2"></span>
+                        </a>
+                        <a style="color: #757575; font-size:13px;cursor:pointer;">
+                            忘记密码?
+                        </a>
+                    </div>
+                    <!--fieldset标签将表单内容的一部分打包，生成一组相关表单的字段，legend为其定义标题-->
+                    <fieldset class="oth_type_tit"style="margin-top: 95px;">
+                        <legend align="center" class="oth_type_txt">其他方式登录</legend>
+                    </fieldset>
+                    <div id="waikuang_middle_qtfsdl" style="white:348px;height: 36.5px">
+                        <!--使用<a>标签插入超链接-->
+                        <a class="waikuang_middle_qq"  title="QQ登录" target="_blank">
+                            <img src="img/login_3.png" width="248" height="45">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--页面底部-->
+    <div class="waikuang_under">
+        <div class="waikuang_under_k1">
+        </div>
+        <div class="waikuang_under_k2">
+            <a>简体&nbsp;&nbsp;&nbsp;</a>
+            |
+            <a> &nbsp;&nbsp;繁体&nbsp;&nbsp;</a>
+            |
+            <a>&nbsp;&nbsp;English&nbsp;&nbsp;</a>
+            |
+            <a>&nbsp;&nbsp;常见问题&nbsp;&nbsp;</a>
+            |
+            <a>&nbsp;&nbsp;隐私政策&nbsp;&nbsp;</a>
+            <br>
+        </div>
+        <div class="waikuang_under_sj2">
+            <a class="waikuang_under_ga" style="font-size: 15px;color: #7e7d7d">
+                小米公司版权所有-京ICP备10046444-<img src="https://account.xiaomi.com/static/res/9204d06/account-static/respassport/acc-2014/img/ghs.png"width="20"height="20">京公网安备11010802020134号-京ICP证110507号
+            </a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

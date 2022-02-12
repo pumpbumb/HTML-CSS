@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="utf8">
+    <title>在线支付</title><!--支付页面标题-->
+    <link rel="stylesheet" type="text/css" href="css/dingbu.css"/>
+    <link rel="stylesheet" type="text/css" href="css/pay.css"/><!--使用外部样式表-->
+    <!-- 使用javascript,定义函数r()，用于提示支付成功-->
+    <script>
+        function r()
+        {
+            {
+                alert("支付成功");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+<body>
+<div id="index-top-background">
+    <div id="index-top-box">
+        <div id="index-top-list">
+            <!--使用<a>标签插入超链接设置导航-->
+            <a href="jump" class="index-top-list-word">小米商城</a>
+            <span>|</span>
+            <a href="" class="index-top-list-word">MIUI</a>
+            <span>|</span>
+            <a href="" class="index-top-list-word">IoT</a>
+            <span>|</span>
+            <a href="" class="index-top-list-word">云服务</a>
+            <span>|</span>
+            <a href="" class="index-top-list-word">金融</a>
+            <span>|</span>
+            <a href="" class="index-top-list-word">有品</a>
+            <span>|</span>
+            <a href="" class="index-top-list-word">小爱平台</a>
+            <span>|</span>
+            <a href="" class="index-top-list-word">企业团购</a>
+            <span>|</span>
+            <a href="" class="index-top-list-word">资质证照</a>
+            <span>|</span>
+            <a href="" class="index-top-list-word">协议规则</a>
+            <span>|</span>
+            <a href="" class="index-top-list-word">下载app</a>
+            <span>|</span>
+            <a href="" class="index-top-list-word">Select Region</a>
+        </div>
+        <div id="index-top-cart">
+            <!-- 使用超链接<a href="cart.html">，链接至购物车页面 -->
+            <a id="index-top-cart-box" href="cart.html">购物车</a>
+        </div>
+        <div id="index-top-info">
+            <a href="" class="index-top-list-word">消息通知</a>
+        </div>
+    </div>
+</div>
+<!-- 支付页正文-->
+<div class="zhuye">
+    <div class="fenye">
+        <div class="fenye_3" style="background-color: #eff0f1;width: auto;height: auto;margin-top: 20px;margin-right: 40px;text-align: right">
+            <div class="ziti">1999<span style="font-size: 15px;color: #1a1a1a">元<br/></span></div>
+            <input type=button style="background:#b3b3b3;padding-right: 2px;padding-left: 2px;padding-top: 1px;padding-bottom: 1px;margin-top: 6px;float: right;width: 64.94px;height: 25px;border-bottom: 1px #0fa4db none;color:white" value="订单详情"/>
+        </div>
+        <div class="fenye_1 fenjiexian">
+            <div class="fenye_2" style="width: 600px;height: 21px;">正在使用即时到账交易，请及时付款！</div>
+            <div class="fenye_2" style="width: auto;height: 21px;padding-top: 8px">小米科技第：1&nbsp号订单&nbsp;&nbsp;&nbsp;&nbsp;收款方：小米网</div>
+        </div>
+        <div class="fenye_2 fenjiexian" style="position:relative;background-color: white">
+            <!-- 使用标签<img src="">插入图片 -->
+            <img src="img/pay_1.png" width="803" height="467">
+            <div style="position:absolute;width:220px;height:35px;left:290px;top:100px;background-color: white">
+                <div class="ziti" style="text-align:center">1999</div>
+            </div>
+        </div>
+        <div class="fenye_3 fenjiexian">
+            <img src="img/pay_2.png" width="147" height="264">
+            <!-- 此处使用onclick="r()"属性设置，点击调用上面javascript定义的函数r()，用于提示支付成功-->
+            <input type=button onclick="r()" style="border-radius:8px;background:#00aeef;padding-bottom: 1px;padding-right: 1px;padding-left: 1px;padding-top: 1px;margin-left: 19px;margin-right: 19px;width: 106px;height: 36px;border-bottom: 1px #0fa4db none;color:white" value="确定支付"/>
+            <div id="div1" style="text-align:center;margin-left: 19px;margin-right: 19px;margin-top: 10px;display:none;font-size:10px">
+                <span id="sp">15</span>秒后跳转
+            </div>
+        </div>
+        <div class="zhuye" style="height: 129px;width: 951px">
+            <!-- 使用标签<img src="">插入图片 -->
+            <img src="img/pay_3.png" width="951" height="129">
+        </div>
+    </div>
+</div>
+</body>
+</html>

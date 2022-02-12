@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>商品详情</title><!-- 页面标题 -->
+    <link rel="stylesheet" type="text/css" href="css/style.css"><!-- 使用外部样式表 -->
+    <!-- 使用javascript,定义函数mychange(m)，用于点击后变色的功能实现 -->
+    <script>
+        function mychange(m)
+        {
+            if(m==1)
+                document.getElementById("bianse1").style.background="blue";
+            if(m==2)
+                document.getElementById("bianse2").style.background="blue";
+            if(m==3)
+                document.getElementById("bianse3").style.background="blue";
+        }
+    </script>
+</head>
+
+<body>
+<!-- 导航及顶部样式 -->
+<div id="index-top-background">
+    <div id="index-top-box">
+        <div id="index-top-list">
+            <!-- 使用超链接标签<a>设置导航 -->
+            <a href="jump" class="index-top-list-word">小米商城</a>
+            <span>|</span>
+            <a href="" class="index-top-list-word">MIUI</a>
+            <span>|</span>
+            <a href="" class="index-top-list-word">IoT</a>
+            <span>|</span>
+            <a href="" class="index-top-list-word">云服务</a>
+            <span>|</span>
+            <a href="" class="index-top-list-word">金融</a>
+            <span>|</span>
+            <a href="" class="index-top-list-word">有品</a>
+            <span>|</span>
+            <a href="" class="index-top-list-word">小爱平台</a>
+            <span>|</span>
+            <a href="" class="index-top-list-word">企业团购</a>
+            <span>|</span>
+            <a href="" class="index-top-list-word">资质证照</a>
+            <span>|</span>
+            <a href="" class="index-top-list-word">协议规则</a>
+            <span>|</span>
+            <a href="" class="index-top-list-word">下载app</a>
+            <span>|</span>
+            <a href="" class="index-top-list-word">Select Region</a>
+        </div>
+        <div id="index-top-cart">
+            <!-- 使用超链接<a href="cart.html">，链接至购物车页面 -->
+            <a id="index-top-cart-box" href="cart.html">购物车</a>
+        </div>
+        <div id="index-top-info">
+            <!-- 使用超链接<a href="login.html" >，链接至登录页面 -->
+                <a href="login.html" class="index-top-list-word">登录</a>
+                <span>|</span>
+            <!-- 使用超链接，没有链接至任何页面 -->
+                <a href="" class="index-top-list-word">注册</a>
+            <span>|</span>
+            <a href="" class="index-top-list-word">消息通知</a>
+        </div>
+    </div>
+</div>
+
+<div id="index-search">
+    <div id="index-search-box">
+        <div style="width: 18%;height: 100px;float: left;">
+            <!-- 使用标签<img src="img/0000.jpg">插入图片 -->
+            <img src="img/0000.jpg" width="60px" height="60px" style="padding-top: 18px">
+        </div>
+        <div style="width:650px;height: 50px;float: left;padding-top: 40px;font-size: 16px">
+            <!-- 使用超链接标签<a>设置导航 -->
+            <a href="" class="index-text">小米手机</a>
+            <a href="" class="index-text">RedMi 红米</a>
+            <a href="" class="index-text">电视</a>
+            <a href="" class="index-text">笔记本</a>
+            <a href="" class="index-text">家电</a>
+            <a href="" class="index-text">路由器</a>
+            <a href="" class="index-text">智能硬件</a>
+            <a href="" class="index-text">服务</a>
+            <a href="" class="index-text">社区</a>
+        </div>
+        <div style="float: right;width: 296px;margin-top: 25px">
+            <!-- 使用标签<form><input type="text" value="小米9">设置表单作为搜索框，并将小米9作为默认值  -->
+            <form style="position: relative;height: 50px;width: 296px;margin: 0;line-height: 21px;">
+                <input type="text" value="小米9" id="box-search" >
+                <!-- 使用超链接标签<a> -->
+                <a href="" id="box-submit" style="text-decoration:none;">搜索</a>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- 详情页正文 -->
+<div class="xiangqing">
+    <div class="neirong1">
+        <div class="xiaomi6_fl">小米9 SE</div>
+        <div class="fr">
+            <!-- 使用超链接标签<a>点击概述跳转至概述部分 -->
+            <a href="#gaishu" style="text-decoration:none;
+    color:black;">概述</a>
+            <span class="shugang">|</span>
+            <a href="www.mi.com" style="text-decoration:none;
+    color:black;">参数</a>
+            <span class="shugang">|</span>
+            <a href="www.mi.com" style="text-decoration:none;
+    color:black;">F码通道</a>
+            <span class="shugang">|</span>
+            <a href="www.mi.com" style="text-decoration:none;
+    color:black;">用户评价</a>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+
+<div class="zhu">
+    <div class="jieshao">
+        <!-- 使用标签<img src="img/1-1-1.jpg">插入图片 -->
+        <div class="left_fl"><img src="img/1-1-1.jpg" style="float: none;list-style: outside none none;position: absolute;width: 560px;z-index: 50;display: block;"></div>
+        <div class="right_fr">
+            <div class="goodname">小米9 SE</div>
+            <div class="fugoodname">索尼4800万超广角三摄 / 骁龙712全球首发 / 全息幻彩机身 / 三星AMOLED屏幕 / 5.97”水滴屏 / 第五代屏幕指纹识别 / 多功能NFC / 红外遥控</div>
+            <div class="jiage">1999元</div>
+            <div class="banben">选择版本</div>
+            <div class="banbenxuanze">
+                <!--使用标签<form>设置表单 -->
+                <form action="detail" method="get">
+                    <!-- 此处调用上面javascript定义的函数mychange(1)，用于实现点击变色功能，即点击后框框变为蓝色 -->
+                    <input id="bianse1"  style="font-size: 18px;text-align: center; height: 58px;line-height: 58px;width: 278px;cursor: pointer;margin-right: 5px;border: 1px solid #bbb;float: left;background-color:#fff " onclick="mychange(1)" type="submit" value="版本一">
+                </form>
+                <form action="detail" method="get">
+                    <!-- 此处调用上面javascript定义的函数mychange(2)，用于实现点击变色功能，即点击后框框变为蓝色 -->
+                    <input id="bianse2"   style="font-size: 18px; text-align: center; height: 58px;line-height: 58px;width: 278px;cursor: pointer;margin-right: 5px;border: 1px solid #bbb;float: right;background-color:#fff " onclick="mychange(2)" type="submit" value="版本二">
+                </form>
+            </div>
+            <div class="yansexz"> 选择颜色</div>
+            <div class="yansexuanzeone">
+                <form action="detail" method="get">
+                    <!-- 此处调用上面javascript定义的函数mychange(3)，用于实现点击变色功能，即点击后框框变为蓝色 -->
+                    <input id="bianse3"   style="font-size: 18px; height: 58px;line-height: 58px;width: 278px;cursor: pointer;margin-right: 5px;border: 1px solid #bbb;background-color:#fff" onclick="mychange(3)" type="submit" value="全息幻彩紫" >
+                </form>
+            </div>
+            <div class="jianjie">
+                <div class="jianjieone">
+                    <div class="left1_fl">小米9 SE 6GB+64GB 全息幻彩紫</div>
+                    <span style="float: right;">1999元</span>
+                </div>
+                <!-- 使用<br/>标签实现换行-->
+                <br/>
+                <div class="jianjietwo">总计：1999元</div>
+            </div>
+            <div class="minglingone">
+                <!-- 使用超链接<a href="cart.html">，链接至购物车页面 -->
+                <a href="cart.html" style="text-decoration: none">
+                    <input class="jrgwc" type="button" name="jrgwc" value="加入购物车"/>
+                </a>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<!-- 商品的图片概述 -->
+<a name="gaishu"></a>
+<div class="tupian">
+    <div class="tupianone" style="z-index:-1;">
+        <!-- 使用标签<img src="">插入图片 -->
+        <img src="img/1-1-2.jpg" style="width:100%;height:100%"/>
+    </div>
+    <div class="tupiantwo" style="z-index:-1;">
+        <img src="img/1-1-3.jpg" style="width:100%;height:100%"/>
+    </div>
+</div>
+</body>
+</html>

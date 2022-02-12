@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪元素选择器</title>
+    <style>
+        /* 
+        💥伪元素，表示页面中一些特殊的并不真实的存在的元素(特殊的位置)
+        伪元素使用::开头
+        ::first-letter  表示第一个字母
+        ::first-line  表示第一行 
+        */
+        p::first-letter{
+            font-size: 100px;
+        }
+        p::first-line{
+            background-color: yellow;
+        }
+        p::selection{
+            background-color: rgb(74, 138, 44);
+        }
+
+        div::before{
+            content: '『';
+        }
+        div::after{
+            content: '』';
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Good moring,dear professors! My name is CaiXin,twenty-one years old.My hometown is Huanggang,Hubei province. Now I study in Yangtze University,majoring in Electronic and Information Engineering, and will graduate in June this year.
+    </p>
+    <div>世上本没有路，走的人多了，也就成了路。</div>
+</body>
+</html>
